@@ -1,0 +1,28 @@
+.textoinicial {
+    padding: 20px;
+    height: 71vh;
+    color: #fff;
+  }
+  
+  .textoinicial h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .textoinicial h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .textoinicial p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #000000;
+  }
+  
+  .textoinicial li{
+    color: #000000;
+  }
