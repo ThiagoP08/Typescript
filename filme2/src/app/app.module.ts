@@ -7,12 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoriasComponent } from './categorias/categorias.component';
-import { AcaoComponent } from './acao/acao.component';
-import { ComediaComponent } from './comedia/comedia.component';
-import { DramaComponent } from './drama/drama.component';
-import { FiccaoComponent } from './ficcao/ficcao.component';
-import { SuspenseComponent } from './suspense/suspense.component';
-import { TerrorComponent } from './terror/terror.component';
+import { CategoriaComponent } from './categorias/categoria/categoria.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,16 +19,13 @@ import { TerrorComponent } from './terror/terror.component';
     BodyComponent,
     FooterComponent,
     CategoriasComponent,
-    AcaoComponent,
-    ComediaComponent,
-    DramaComponent,
-    FiccaoComponent,
-    SuspenseComponent,
-    TerrorComponent
+    CategoriaComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 .textoinicial {
     padding: 20px;
-    height: 71vh;
+    height: 100vh;
     color: #fff;
   }
   
@@ -26,20 +26,8 @@
   .textoinicial li{
     color: #000000;
   }
-  button {
-    background-color: #333;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-  }
-  
-  button a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  button:hover {
-    background-color: #666;
+
+  .categorias-botao{
+    display: flex;
+    justify-content: center;
   }

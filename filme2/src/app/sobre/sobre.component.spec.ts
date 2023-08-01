@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComediaComponent } from './comedia.component';
+import { SobreComponent } from './sobre.component';
 
-describe('ComediaComponent', () => {
-  let component: ComediaComponent;
-  let fixture: ComponentFixture<ComediaComponent>;
+describe('SobreComponent', () => {
+  let component: SobreComponent;
+  let fixture: ComponentFixture<SobreComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ComediaComponent]
+      declarations: [SobreComponent]
     });
-    fixture = TestBed.createComponent(ComediaComponent);
+    fixture = TestBed.createComponent(SobreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
