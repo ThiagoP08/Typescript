@@ -1,6 +1,4 @@
 <div class="categoria">
     <img [src]="categoria.img" alt="img-categoria">
-    <!-- <button [routerLink]="'/filme/' + 1" >{{categoria.titulo}}</button> -->
-    <button [routerLink]="['/filme', { genero: categoria.genero }]" >{{categoria.titulo}}</button>
-   
+    <a [routerLink]="['/filme', categoria.id]">{{categoria.titulo}}</a>
 </div>

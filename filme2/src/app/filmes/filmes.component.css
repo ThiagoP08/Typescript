@@ -1,0 +1,33 @@
+.filme {
+    flex: 0 0 calc(33.3333% - 20px);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #131212;
+  }
+  
+  .filme img {
+    margin-top: 3rem;
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 25px;
+    object-fit: cover;
+    background-color:#cacaca;
+    border: solid 1px #000000;
+
+  }
+  
+  .filme a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #00aeff;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid #0d053a;
+    border-radius: 5px;
+    background-color: #000000;
+    text-align: center;
+  }
+  

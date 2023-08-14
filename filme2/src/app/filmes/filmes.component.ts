@@ -22,13 +22,13 @@ export class FilmesComponent {
     // {id: "", titulo: "", img: "/assets/img/.jpg", genero: },
   ] 
 
-  categoria: number | null = null;
+  generoSelecionado: number | null = null;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.categoria = params['genero'];
+      this.generoSelecionado = Number(params['genero']);
     });
   }
 }

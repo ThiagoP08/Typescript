@@ -16,7 +16,7 @@
     border-radius: 30px;
   }
   
-  .categoria button {
+  .categoria a {
     display: block;
     padding: 5px 10px;
     text-decoration: none;
@@ -29,7 +29,7 @@
     text-align: center;
   }
   
-  .categoria button:hover {
+  .categoria a:hover {
     color: #ffffff;
     background-color: #070124;
     padding: 7px;
