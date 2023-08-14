@@ -16,7 +16,7 @@
     border-radius: 30px;
   }
   
-  .categoria a {
+  .categoria button {
     display: block;
     padding: 5px 10px;
     text-decoration: none;
@@ -26,9 +26,10 @@
     border: 2px solid #0d053a;
     border-radius: 5px;
     background-color: #000000;
+    text-align: center;
   }
   
-  .categoria a:hover {
+  .categoria button:hover {
     color: #ffffff;
     background-color: #070124;
     padding: 7px;

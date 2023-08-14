@@ -3,13 +3,8 @@
   <h2>Categorias</h2>
 
   <div class="categorias-botao">
-    <fil-categoria></fil-categoria>
-    <fil-categoria></fil-categoria>
-    <fil-categoria></fil-categoria>
-    <fil-categoria></fil-categoria>
-    <fil-categoria></fil-categoria>
-    <fil-categoria></fil-categoria>
-  </div>
+    <fil-categoria *ngFor="let c of categorias" [categoria]="c"></fil-categoria>
 
-      
+  </div>
+    
 </div> 

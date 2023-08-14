@@ -1,0 +1,6 @@
+<div *ngFor="let filme of filmes" class="filme">
+        <div *ngIf="categoria === null || filme.genero === categoria">
+                <img [src]="filme.img" alt="img-filme">
+                <a>{{filme.titulo}}</a>
+        </div>
+</div>

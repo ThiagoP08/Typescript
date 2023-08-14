@@ -11,6 +11,7 @@ import { CategoriaComponent } from './categorias/categoria/categoria.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { FilmesComponent } from './filmes/filmes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     CategoriasComponent,
     CategoriaComponent,
-    SobreComponent
+    SobreComponent,
+    FilmesComponent
   ],
   imports: [
     BrowserModule,
