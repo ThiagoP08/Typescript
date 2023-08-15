@@ -15,9 +15,11 @@ export class FilmesComponent {
 
   constructor(private service: FilmesService, private route: ActivatedRoute) {}
   ngOnInit() {
-    this.service.listarFilmes().subscribe(filmes => this.filmes = filmes);
     this.route.params.subscribe(params => {
       this.generoSelecionado = Number(params['genero']);
+      this.service.listarFilmes().subscribe(filmes => {
+        this.filmes = filmes.filter(filme => filme.genero == this.generoSelecionado);
+      });
     });
   }
 }
