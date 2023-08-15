@@ -1,0 +1,68 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "titulo": "Ação",
+            "img": "/assets/img/action.png"
+        },
+
+        {
+            "id": 2,
+            "titulo": "Comédia",
+            "img":"/assets/img/comedy.png"
+        },
+
+        {
+            "id": 3,
+            "titulo": "Terror",
+            "img":"/assets/img/horror.png"
+        }
+
+    ],
+
+    "filmes": [
+        {
+          "id": "0",
+          "titulo": "John Wick",
+          "img": "/assets/img/johnw.jpg",
+          "genero": "1"
+        },
+        {
+          "id": "1",
+          "titulo": "Assassino a Preço Fixo",
+          "img": "/assets/img/assassinprefix.jpg",
+          "genero": "1"
+        },
+        {
+          "id": "2",
+          "titulo": "O Protetor",
+          "img": "/assets/img/protetor.jpg",
+          "genero": "1"
+        },
+        {
+          "id": "3",
+          "titulo": "Mistério no Mediterrâneo",
+          "img": "/assets/img/misteriomedi.jpg",
+          "genero": "2"
+        },
+        {
+          "id": "4",
+          "titulo": "Gente Grande",
+          "img": "/assets/img/gentegrande.jpg",
+          "genero": "2"
+        },
+        {
+          "id": "5",
+          "titulo": "Juntos e Misturados",
+          "img": "/assets/img/juntosmisturado.jpg",
+          "genero": "2"
+        },
+        {
+          "id": "6",
+          "titulo": "Sexta Feira 13",
+          "img": "/assets/img/sexta13.jpg",
+          "genero": "3"
+        }
+      ]
+      
+}

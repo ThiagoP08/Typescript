@@ -1,6 +1,7 @@
 // import { Component } from '@angular/core';
 import { Categoria } from 'src/models/categoria.model';
 import { Component, Output, EventEmitter } from '@angular/core';
+import { CategoriasService } from './categorias.service';
 
 @Component({
   selector: 'fil-categorias',
@@ -8,11 +9,13 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./categorias.component.css']
 })
 export class CategoriasComponent {
-  categorias: Categoria[] = [
-    {id: "1", titulo: "Ação", img: "/assets/img/action.png"},
-    {id: "2", titulo: "Comedia", img: "/assets/img/comedy.png"},
-    {id: "3", titulo: "terror", img: "/assets/img/horror.png"}
-  ] 
+  categorias!: Categoria[];
+
+  constructor(private service: CategoriasService){}
+
+  ngOnInit(){
+    this.service.listarCategorias().subscribe(categorias => this.categorias = categorias);
+  }
   
   @Output() categoriaSelecionada = new EventEmitter<number>();
 

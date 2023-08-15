@@ -12,6 +12,9 @@ import { SobreComponent } from './sobre/sobre.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { FilmesComponent } from './filmes/filmes.component';
+import { CategoriasService } from './categorias/categorias.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FilmesService } from './filmes/filmes.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +30,10 @@ import { FilmesComponent } from './filmes/filmes.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CategoriasService, FilmesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
