@@ -1,4 +1,6 @@
 <div class="categoria">
     <img [src]="categoria.img" alt="img-categoria">
+    
+    <!-- Cria um link para a página de filmes relacionada a esta categoria -->
     <a [routerLink]="['/filme', categoria.id]">{{categoria.titulo}}</a>
 </div>
