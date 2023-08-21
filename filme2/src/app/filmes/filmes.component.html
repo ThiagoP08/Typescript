@@ -1,10 +1,16 @@
-<div *ngFor="let filme of filmes" class="filme">
-  
-  <!-- Verifica se não há um gênero selecionado ou se o filme possui o gênero correspondente -->      
-  <div *ngIf="generoSelecionado === null || filme.genero == generoSelecionado">
-    <img [src]="filme.img" alt="img-filme">
-    <a>{{filme.titulo}}</a>
+<section>
+  <div *ngFor="let filme of filmes" class="filme">
+    
+    <!-- Verifica se não há um gênero selecionado ou se o filme possui o gênero correspondente -->      
+    <div *ngIf="generoSelecionado === null || filme.genero == generoSelecionado">
+      <img [src]="filme.img" alt="img-filme">
+      <a>{{filme.titulo}}</a>
+    </div>
+    <div *ngIf="filmes.length == 0">
+              <h3> Nada a exibir nesta Categoria! </h3>
+          </div>
   </div>
-</div>
+
+</section>
           
       
