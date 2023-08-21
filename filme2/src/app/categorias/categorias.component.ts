@@ -1,11 +1,6 @@
-// Importa a classe Categoria do arquivo categoria.model.ts
-import { Categoria } from 'src/models/categoria.model';
-
-// Importa os módulos Component, Output e EventEmitter do Angular
-import { Component, Output, EventEmitter } from '@angular/core';
-
-// Importa o serviço CategoriasService que será injetado neste componente
-import { CategoriasService } from './categorias.service';
+import { Categoria } from 'src/models/categoria.model';// Importa a classe Categoria do arquivo categoria.model.ts
+import { Component, Output, EventEmitter } from '@angular/core';// Importa os módulos Component, Output e EventEmitter do Angular
+import { CategoriasService } from './categorias.service';// Importa o serviço CategoriasService que será injetado neste componente
 
 // Define o decorador @Component para configurar esse componente
 @Component({
@@ -21,12 +16,10 @@ export class CategoriasComponent {
 
 // Método executado quando o componente é inicializado
   ngOnInit() {
-// Chama o método listarCategorias do serviço e se inscreve para receber a lista de categorias
-    this.service.listarCategorias().subscribe(categorias => this.categorias = categorias);
+    this.service.listarCategorias().subscribe(categorias => this.categorias = categorias);// Chama o método listarCategorias do serviço e se inscreve para receber a lista de categorias
   }
   
-// Declara um EventEmitter chamado categoriaSelecionada que emitirá valores do tipo number
-  @Output() categoriaSelecionada = new EventEmitter<number>();
+  @Output() categoriaSelecionada = new EventEmitter<number>();// Declara um EventEmitter chamado categoriaSelecionada que emitirá valores do tipo number
 
 // Método que emite um evento com o gênero da categoria selecionada
   selecionarCategoria(genero: number) {

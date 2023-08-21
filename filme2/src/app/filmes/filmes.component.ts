@@ -19,6 +19,7 @@ export class FilmesComponent {
     // Registra um observador para detectar alterações na rota
     this.route.params.subscribe(params => {
       this.generoSelecionado = Number(params['genero']); // Obtém o gênero selecionado da URL
+      
       // Chama o serviço para listar os filmes e filtra apenas os filmes com o gênero selecionado
       this.service.listarFilmes().subscribe(filmes => {
         this.filmes = filmes.filter(filme => filme.genero == this.generoSelecionado);
